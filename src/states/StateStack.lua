@@ -13,7 +13,9 @@ function StateStack:init()
 end
 
 function StateStack:update(dt)
-    self.states[#self.states]:update(dt)
+    if self.states ~= nil then
+        self.states[#self.states]:update(dt)
+    end
 end
 
 function StateStack:processAI(params, dt)

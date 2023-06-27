@@ -16,6 +16,7 @@ function BattleMenuState:init(battleState)
         y = VIRTUAL_HEIGHT - 64,
         width = 64,
         height = 64,
+        cursor = true,
         items = {
             {
                 text = 'Fight',
